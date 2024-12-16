@@ -102,6 +102,100 @@
 }
 
      </style>
+
+     <style>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .team-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-links img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .team-header h1 {
+                font-size: 2em;
+            }
+
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+     </style>
   </head>
   <body>
     <div class="login-root">
@@ -155,7 +249,7 @@
                     <a class="nav-link" href="/members">Members</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/blogs">Blogs</a>
+                    <a class="nav-link" href="https://cmanirudh-blog.netlify.app">Blogs</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/events">Events</a>
@@ -167,6 +261,133 @@
               </div>
             </div>
           </nav>
+
+          <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            <div class="formbg-outer">
+              <header>
+                  <h1>Meet the members of CodeBizz</h1>
+              </header>
+
+              <div class="team-container">
+                <div class="team-header">
+                    <h1>Faculty Co-ordinators</h1>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="static/Images/RLN.jpg" alt="Member Photo">
+                        <h2>Dr. Renukalatha S</h2>
+                        <div class="social-links">
+                            <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                            <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+        
+                    <div class="team-grid">
+                    <div class="team-member">
+                        <img src="static/Images/TSB.jpg" alt="Member Photo">
+                        <h2>Bharath T S</h2>
+                        <div class="social-links">
+                            <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                            <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+              </div>
+              </div>
+              <!--Student Co ordinators-->
+              <div class="formbg-outer" >  
+              
+                  <div class="team-header">
+                      <h1>Student Co-ordinators</h1>
+                  </div>
+                  <div class="team-grid">
+                      <div class="team-member">
+                          <img src="static/Images/amith.jpg" alt="Member Photo">
+                          <h2>Anirudh C M</h2>
+                          <div class="social-links">
+                              <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                              <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                          </div>
+                      </div>
+          
+                      <div class="team-grid">
+                      <div class="team-member">
+                          <img src="static/Images/rohith.jpg" alt="Member Photo">
+                          <h2>Rohith E S</h2>
+                          <div class="social-links">
+                              <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                              <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                          </div>
+                      </div>
+                
+                </div>
+            </div>
+            <!--Members-->
+            <div class="formbg-outer" >  
+              
+              <div class="team-header">
+                  <h1>Members</h1>
+              </div>
+              <div class="team-grid">
+                  <div class="team-member">
+                      <img src="static/Images/chandan.jpg" alt="Member Photo">
+                      <h2>Chandan T O</h2>
+                      <div class="social-links">
+                          <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                          <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                      </div>
+                  </div>
+      
+                  
+                  <div class="team-member">
+                      <img src="static/Images/chandana.jpg" alt="Member Photo">
+                      <h2>Chandana M N</h2>
+                      <div class="social-links">
+                          <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                          <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                      </div>
+                  </div>
+                  <div class="team-member">
+                    <img src="static/Images/chaithra.png" alt="Member Photo">
+                    <h2>Chaithra K</h2>
+                    <div class="social-links">
+                        <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div><br>
+            <div class="formbg-outer" >  
+              <div class="team-grid">
+                  <div class="team-member">
+                      <img src="static/Images/dhavala.jpg" alt="Member Photo">
+                      <h2>Dhavala G M</h2>
+                      <div class="social-links">
+                          <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                          <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                      </div>
+                  </div>
+      
+                  
+                  <div class="team-member">
+                      <img src="static/Images/chinmayee.jpg" alt="Member Photo">
+                      <h2>Chinmayee C</h2>
+                      <div class="social-links">
+                          <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                          <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                      </div>
+                  </div>
+                  <div class="team-member">
+                    <img src="static/Images/harshitha.jpg" alt="Member Photo">
+                    <h2>Harshitha R</h2>
+                    <div class="social-links">
+                        <a href="mailto:johndoe@example.com" target="_blank"><img src="static/Images/email.png" alt="Email"></a>
+                        <a href="https://linkedin.com" target="_blank"><img src="static/Images/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
           </div>
         </div>
       </div>
