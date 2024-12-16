@@ -88,9 +88,7 @@
             text-align: center;
             margin: 0;
           }
-        }
-
-        /* General Styles */
+        } 
 .tool-card {
   width: 70vw; /* Use viewport width for better scaling */
   margin: 0 auto; /* Center the card horizontally */
@@ -101,7 +99,119 @@
   width: 100%; /* Ensure image fills the container width */
 }
 
+
      </style>
+
+     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    .tool-card {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .tool-card .text-section {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .tool-card .text-section h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .tool-card .text-section p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    .tool-card .image-section {
+        flex: 1;
+    }
+
+    .tool-card .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .tool-card {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tool-card .image-section {
+            order: -1;
+            width: 100%;
+        }
+
+        .tool-card .text-section {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tool-card .text-section h2 {
+            font-size: 20px;
+        }
+
+        .tool-card .text-section p {
+            font-size: 14px;
+        }
+    }
+  </style>
+
+  <!--For medal emote-->
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .tool-card .footer {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      background-color: #f9f9f9;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      border-top: 1px solid #ddd;
+  }
+  </style>
   </head>
   <body>
     <div class="login-root">
@@ -155,18 +265,81 @@
                     <a class="nav-link" href="/members">Members</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/blogs">Blogs</a>
+                    <a class="nav-link" href="https://cmanirudh-blog.netlify.app">Blogs</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/events">Events</a>
                   </li>
-
-                  
-                  
-                
               </div>
             </div>
           </nav>
+          <!--End of NAV bar-->
+          <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+          <div class="formbg-outer">
+            <header>
+                <h1>Discover new events conducted by CodeBizz</h1>
+            </header>
+
+            <!--Card with text and image-->
+                          <!--About CodeBizz-->
+                          <div class="tool-card">
+                            <div class="text-section">
+                                <h2>Upcoming Coding competition</h2>
+                                <p>Are you a coding whiz? Join our upcoming coding competition and put your skills to the test!</p>
+                                <ul>
+                                  <li>-Showcase your talent: Demonstrate your coding prowess to a global audience.</li>
+                                  <li>-Learn and grow: Challenge yourself and learn from other talented coders.</li>
+                                  <li>-Win exciting prizes: Grab your chance to win amazing rewards.</li>
+                                </ul>
+                                <p>Don't miss this opportunity to code, compete, and conquer!
+
+                                  Register now and let the coding battle begin!</p>
+                                <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdKyq97LdVRlUbpg3Yt9O-hAlZde_272hZaBPKc0k95kmY66w/viewform?usp=header" role="button">Register</a>
+                            </div>
+                            <div class="image-section">
+                                <img src="static/Images/brochure.jpg" alt="Student Team Image">
+                            </div>
+                      </div><br>
+            <!--Hackathon-->
+            <div class="tool-card">
+              <div class="text-section">
+                  <h2>Upcoming Hackathon</h2>
+                  <p>
+                    Get ready to innovate, collaborate, and code your way to glory! CodeBizz is thrilled to announce our upcoming hackathon.</p>
+                    <ul>
+                      <li>-Unleash your creativity: Join forces with fellow coders and create something truly amazing</li>
+                      <li>-Mind-Bending Challenges: Tackle exciting problem statements and build innovative solutions.</li>
+                      <li>-Networking Opportunities: Connect with fellow coders, industry experts, and potential mentors.</li>
+                      <li>-Exciting Prizes: Win amazing rewards for your outstanding projects.</li>
+                    </ul>
+                    <p>Stay tuned for the official date announcement!
+
+                      Mark your calendars and prepare to unleash your coding potential.</p>
+              </div>
+              <div class="image-section">
+                  <img src="static/Images/hackathon.png" alt="Student Team Image">
+              </div>
+            </div><br>
+
+          <!--Winners of 2023 Coding competion-->
+          <div class="tool-card">
+            <div class="text-section">
+                <h2>Previous events</h2>
+                <p>In 2023, CodeBizz hosted an electrifying coding competition that brought together the brightest tech minds to showcase their skills. Participants tackled challenging problems and pushed the boundaries of innovation. With exciting prizes and a chance to network with fellow coders, the event was a true celebration of creativity and problem-solving.</p>
+                <p>Here are the winners of the 2023 coding competition:</p>
+                <ul>
+                  <li>🥇 Rachana</li>
+                  <li>🥈 Lingaraju</li>
+                  <li>🥉 Likhith Gowda SR</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="static/Images/Winners.jpg" alt="Student Team Image">
+            </div>
+        </div>
+              
+          </div>
+            <!--Content should end here-->
           </div>
         </div>
       </div>
